@@ -1,0 +1,45 @@
+#seguros .vantagens-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#seguros .vantagens-bg {
+  background-color: #000;
+}
+
+#seguros .vantagens-container h2 {
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  text-transform: lowercase;
+}
+
+#seguros .vantagens-lista {
+  padding-left: 20px;
+}
+
+#seguros .vantagens-lista ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-bottom: 60px;
+}
+
+#seguros .vantagens-lista ul li h3 {
+  color: #fff;
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+#seguros .vantagens-lista ul li p {
+  color: #b2b2b2;
+  font-family: "roboto";
+  font-weight: 400;
+  max-width: 38ch;
+}
+
+#seguros .vantagens-lista ul li {
+  display: grid;
+  gap: 5px;
+}
