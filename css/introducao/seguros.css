@@ -1,0 +1,155 @@
+#index .seguros-bg {
+  background-color: #111;
+}
+
+#index .seguros-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#index .seguros-container h2 {
+  margin-top: 60px;
+  margin-left: 20px;
+  color: #fff;
+}
+
+#index .valor-periodo {
+  padding-right: 30px;
+}
+
+#index #prata {
+  grid-column: 1;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#index #prata h3 {
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 2rem;
+  color: #b2b2b2;
+  padding-left: 60px;
+  margin-bottom: 20px;
+}
+
+#index .seguros-planos-valor {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "poppins";
+}
+
+#index .seguros-planos-periodo {
+  font-family: "poppins";
+  color: #b2b2b2;
+  text-transform: lowercase;
+  font-size: 0.725rem;
+  text-align: end;
+}
+
+#index .seguros-planos-titulo span {
+  display: block;
+}
+
+#index .seguros-planos-titulo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding-top: 20px;
+}
+
+#index .seguros-planos {
+  border-radius: 4px;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+#index .seguros-planos ul {
+  font-family: "roboto";
+  font-size: 1.275rem;
+  padding-left: 60px;
+  padding-bottom: 30px;
+  line-height: 2;
+}
+
+#index .seguros-planos ul li {
+  position: relative;
+}
+
+#index .seguros-planos ul li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 9px;
+  top: 15px;
+  left: -22px;
+  background: url("/img/icones/lista.svg") no-repeat;
+}
+
+#index .botao-cinza {
+  background: #2e2e2e;
+  color: #fff;
+  padding: 16px 32px;
+  font-family: "poppins";
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+#index .botao-cinza:hover {
+  background: #404040;
+  color: #fff;
+  padding: 16px 32px;
+  font-family: "poppins";
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+#index #ouro {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+#index #ouro h3 {
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 2rem;
+  color: #ffbb00;
+  padding-left: 60px;
+  margin-bottom: 20px;
+}
+
+#index #ouro .botao-amarelo {
+  display: inline-block;
+  margin-left: 60px;
+}
+
+#index .botao-amarelo,
+.botao-cinza {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  #index .seguros-container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+    padding-bottom: 80px;
+  }
+  #index .seguros-planos ul {
+    padding-bottom: 0;
+  }
+  #index .seguros-container h2 {
+    margin-bottom: 30px;
+  }
+}

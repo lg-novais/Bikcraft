@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.ponto {
+  color: #ffbb00;
+}
+
+.botao-amarelo {
+  background: linear-gradient(#ffbb00, #f2a50c);
+  color: #332200;
+  padding: 16px 32px;
+  font-family: "poppins";
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.botao-amarelo:hover {
+  background: #e4a30b;
+  color: #332200;
+  padding: 16px 32px;
+  font-family: "poppins";
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nome-bicicleta {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Poppins";
+  line-height: 1.25;
+}
+
+h1 {
+  color: #fff;
+}
+
+h1,
+h2 {
+  font-family: "Poppins";
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+p {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}

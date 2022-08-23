@@ -1,0 +1,82 @@
+#index .bicicletas-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#index .bicicletas-container h2 {
+  padding-top: 30px;
+  padding-left: 20px;
+  text-transform: lowercase;
+}
+
+#index .bicicletas-lista ul {
+  display: flex;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-x: auto;
+}
+
+#index .bicicletas-lista ul li h3 {
+  position: relative;
+}
+
+#index .bicicletas-lista ul li h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 8px;
+  width: 12px;
+  top: 10px;
+  left: -22px;
+  background-color: #ffbb00;
+  transition: 0.3s;
+}
+
+#index .bicicletas-lista ul li:hover h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 8px;
+  width: 24px;
+  top: 10px;
+  left: -22px;
+  background-color: #ffbb00;
+}
+
+#index .bicicletas-lista ul li h3 {
+  position: relative;
+}
+
+#index .bicicleta h3,
+.bicicleta span {
+  margin-left: 22px;
+}
+
+#index .bicicletas-lista ul img {
+  border-radius: 4px;
+}
+
+#index .bicicleta a {
+  color: #000;
+  font-family: "roboto";
+  font-size: 1.275rem;
+}
+
+#index .bicicleta a span {
+  display: block;
+  color: #717171;
+  font-family: "roboto";
+  margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+  #index .bicicletas-lista ul {
+    flex-direction: column;
+  }
+  #index .bicicletas-container h2 {
+    margin-top: 80px;
+  }
+}

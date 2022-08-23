@@ -1,0 +1,72 @@
+#index .depoimento-bg {
+  background: #ffbb00 url("/img/dec/bottom-right-p.svg") no-repeat bottom 50px
+    right 20px;
+}
+
+#index .depoimento-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+  padding-right: 20px;
+}
+
+#index .depoimento-container img {
+  display: flex;
+  object-fit: cover;
+}
+
+#index .depoimento-texto p {
+  display: flex;
+  color: #332200;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "merriweather";
+  font-style: italic;
+  padding-left: 80px;
+}
+
+/* #index .depoimento-texto p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+} */
+
+#index .depoimento-texto span {
+  display: flex;
+  display: block;
+  font-family: "roboto";
+  color: #664400;
+  font-weight: 600;
+  padding-left: 80px;
+  padding-top: 20px;
+}
+
+@media (max-width: 800px) {
+  #index .depoimento-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #index .depoimento-bg {
+    background: #ffbb00;
+  }
+  #index .depoimento-texto p {
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  #index .depoimento-texto span {
+    display: flex;
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  #index .depoimento-container img {
+    display: flex;
+    object-fit: cover;
+  }
+}
