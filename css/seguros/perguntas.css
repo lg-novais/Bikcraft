@@ -22,7 +22,7 @@
   position: relative;
 }
 
-#seguros .perguntas-respostas dl div::after {
+#seguros .perguntas-respostas dl div dt::after {
   content: "";
   display: block;
   position: absolute;
@@ -34,7 +34,7 @@
   transition: 0.3s;
 }
 
-#seguros .perguntas-respostas dl div:hover:after {
+#seguros .perguntas-respostas dl div dt:hover:after {
   content: "";
   display: block;
   position: absolute;

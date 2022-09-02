@@ -1,30 +1,30 @@
-#index .bicicletas-container {
+#magic .bicicletas-container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-#index .bicicletas-container h2 {
+#magic .bicicletas-container h2 {
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 60px;
-  /* padding-left: 20px; */
+  padding-bottom: 30px;
   text-transform: lowercase;
+  color: #000;
 }
 
-#index .bicicletas-lista ul {
-  display: flex;
+#magic .bicicletas-lista ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding-top: 60px;
   padding-bottom: 120px;
-  /* padding-left: 20px; */
-  padding-right: 20px;
-  overflow-x: auto;
 }
 
-#index .bicicletas-lista ul li h3 {
+#magic .bicicletas-lista ul li h3 {
   position: relative;
 }
 
-#index .bicicletas-lista ul li h3::after {
+#magic .bicicletas-lista ul li h3::after {
   content: "";
   display: block;
   position: absolute;
@@ -36,7 +36,7 @@
   transition: 0.3s;
 }
 
-#index .bicicletas-lista ul li:hover h3::after {
+#magic .bicicletas-lista ul li:hover h3::after {
   content: "";
   display: block;
   position: absolute;
@@ -45,33 +45,35 @@
   top: 10px;
   left: -22px;
   background-color: #ffbb00;
+  transition: 0.3s;
 }
 
-#index .bicicletas-lista ul li h3 {
+#magic .bicicletas-lista ul li h3 {
   position: relative;
   transition: 0.3s;
 }
 
-#index .bicicletas-lista ul li:hover h3 {
+#magic .bicicletas-lista ul li:hover h3 {
   padding-left: 12px;
+  position: relative;
 }
 
-#index .bicicleta h3,
+#magic .bicicleta h3,
 .bicicleta span {
   margin-left: 22px;
 }
 
-#index .bicicletas-lista ul img {
+#magic .bicicletas-lista ul img {
   border-radius: 4px;
 }
 
-#index .bicicleta a {
+#magic .bicicleta a {
   color: #000;
   font-family: "roboto";
   font-size: 1.275rem;
 }
 
-#index .bicicleta a span {
+#magic .bicicleta a span {
   display: block;
   color: #717171;
   font-family: "roboto";
@@ -79,10 +81,14 @@
 }
 
 @media (max-width: 800px) {
-  #index .bicicletas-lista ul {
-    flex-direction: column;
+  #magic .bicicletas-lista ul {
+    grid-template-columns: 1fr;
   }
-  #index .bicicletas-container h2 {
-    margin-top: 80px;
+}
+@media (max-width: 600px) {
+  #magic .bicicletas-container h2 {
+    font-size: 3rem;
+    padding-top: 30px;
+    padding-bottom: 15px;
   }
 }

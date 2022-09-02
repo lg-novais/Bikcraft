@@ -1,0 +1,190 @@
+#nimbus .bicicletas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#nimbus .nimbus-bg {
+  background-color: #111;
+}
+
+#nimbus .titulo {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+}
+
+#nimbus div h2 {
+  color: #fff;
+}
+
+#nimbus div .sub-titulo {
+  display: block;
+  font-family: "poppins";
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #b2b2b2;
+}
+
+#nimbus .nimbus-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  padding-left: 20px;
+}
+
+#nimbus .nimbus img {
+  border-radius: 4px;
+}
+
+#nimbus .magic-nebula {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#nimbus .magic-nebula img {
+  border-radius: 4px;
+}
+
+#nimbus .nimbus-conteudo p {
+  font-family: "roboto";
+  font-size: 1.5rem;
+  color: #b2b2b2;
+}
+
+#nimbus .botao-entrega-estoque {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+#nimbus .botao-entrega-estoque a {
+  display: block;
+  margin-top: 15px;
+}
+
+#nimbus .botao-entrega-estoque span {
+  background: #000;
+  color: #b2b2b2;
+  padding: 4px 8px;
+  font-family: "poppins";
+  font-size: 0.725rem;
+  border-radius: 4px;
+  text-transform: lowercase;
+  align-self: center;
+  margin-left: 10px;
+}
+
+#nimbus .botao-entrega-estoque div {
+  display: grid;
+  gap: 10px;
+  margin-top: 15px;
+  justify-items: start;
+}
+
+#nimbus .nimbus-informacoes {
+  margin-top: 40px;
+}
+
+#nimbus .nimbus-informacoes h3 {
+  color: #fff;
+  font-family: "poppins";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.725rem;
+  padding-bottom: 15px;
+}
+
+#nimbus .nimbus-caracteristicas ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #000;
+  padding: 25px 30px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+#nimbus .nimbus-caracteristicas ul h4 {
+  color: #fff;
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#nimbus .nimbus-caracteristicas ul p {
+  color: #b2b2b2;
+  font-family: "roboto";
+}
+
+#nimbus .ficha-tecnica {
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+#nimbus .ficha-tecnica h3 {
+  color: #fff;
+  font-family: "poppins";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.725rem;
+  padding-bottom: 15px;
+}
+
+#nimbus .ficha-lista {
+  background-color: #000;
+  color: #b2b2b2;
+  border-radius: 4px;
+  padding: 40px 40px 30px 40px;
+  margin-bottom: 60px;
+}
+
+#nimbus .ficha-lista ul li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 0 auto;
+  border-bottom: solid 1px #111;
+  align-items: center;
+}
+
+#nimbus .ficha-lista ul li:last-child {
+  border: none;
+}
+
+#nimbus .ficha-lista ul li span {
+  display: block;
+  font-family: "roboto";
+  padding: 10px 0;
+}
+
+@media (max-width: 800px) {
+  #nimbus .nimbus-container {
+    grid-template-columns: 1fr;
+  }
+  #nimbus .nimbus-conteudo p {
+    margin-right: 20px;
+  }
+  #nimbus .ficha-tecnica h3,
+  #nimbus .nimbus-informacoes h3 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  #nimbus .nimbus-informacoes ul {
+    grid-template-columns: 1fr;
+  }
+  #nimbus .nimbus-bicicletas .nimbus {
+    margin-right: 20px;
+  }
+  #nimbus .nimbus-bicicletas .magic-nebula {
+    grid-template-columns: 1fr;
+    margin-right: 20px;
+  }
+}

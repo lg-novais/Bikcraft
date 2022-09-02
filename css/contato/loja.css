@@ -1,0 +1,83 @@
+#contato .loja-bg {
+  padding-top: 100px;
+  background-color: #f7f7f7;
+}
+
+#contato .loja-bg h2 {
+  padding-left: 20px;
+  padding-bottom: 60px;
+  text-transform: lowercase;
+}
+
+#contato .loja-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+#contato .loja-local {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 80px;
+  /* padding-bottom: 60px; */
+}
+
+#contato .loja-local h3 {
+  font-size: 1.5rem;
+  font-family: "poppins";
+  font-weight: 600;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+#contato .loja-local ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 40px;
+  font-family: "roboto";
+  color: #595959;
+}
+
+#contato .loja-local ul li {
+  line-height: 2;
+  position: relative;
+}
+
+#contato .loja-local ul li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: -10px;
+  background-color: #f7f7f7;
+}
+
+#contato .loja-local p {
+  margin-top: 20px;
+  margin-left: 60px;
+  font-family: "poppins";
+  font-weight: 500;
+  position: relative;
+}
+
+#contato .loja-local p::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: -30px;
+  background: url("/img/icones/horario.svg");
+}
+
+@media (max-width: 800px) {
+  #contato .loja-container {
+    grid-template-columns: 1fr;
+  }
+}

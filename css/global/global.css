@@ -9,6 +9,7 @@ a {
   list-style: none;
   text-decoration: none;
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -27,6 +28,7 @@ img {
   border-radius: 4px;
   font-weight: 600;
   text-transform: uppercase;
+  box-shadow: inset 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .botao-amarelo:hover {

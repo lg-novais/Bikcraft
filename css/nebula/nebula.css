@@ -1,0 +1,190 @@
+#nebula .bicicletas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#nebula .nebula-bg {
+  background-color: #111;
+}
+
+#nebula .titulo {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+}
+
+#nebula div h2 {
+  color: #fff;
+}
+
+#nebula div .sub-titulo {
+  display: block;
+  font-family: "poppins";
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #b2b2b2;
+}
+
+#nebula .nebula-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  padding-left: 20px;
+}
+
+#nebula .nebula img {
+  border-radius: 4px;
+}
+
+#nebula .nebula-nebula {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#nebula .nebula-nebula img {
+  border-radius: 4px;
+}
+
+#nebula .nebula-conteudo p {
+  font-family: "roboto";
+  font-size: 1.5rem;
+  color: #b2b2b2;
+}
+
+#nebula .botao-entrega-estoque {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+#nebula .botao-entrega-estoque a {
+  display: block;
+  margin-top: 15px;
+}
+
+#nebula .botao-entrega-estoque span {
+  background: #000;
+  color: #b2b2b2;
+  padding: 4px 8px;
+  font-family: "poppins";
+  font-size: 0.725rem;
+  border-radius: 4px;
+  text-transform: lowercase;
+  align-self: center;
+  margin-left: 10px;
+}
+
+#nebula .botao-entrega-estoque div {
+  display: grid;
+  gap: 10px;
+  margin-top: 15px;
+  justify-items: start;
+}
+
+#nebula .nebula-informacoes {
+  margin-top: 40px;
+}
+
+#nebula .nebula-informacoes h3 {
+  color: #fff;
+  font-family: "poppins";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.725rem;
+  padding-bottom: 15px;
+}
+
+#nebula .nebula-caracteristicas ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #000;
+  padding: 25px 30px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+#nebula .nebula-caracteristicas ul h4 {
+  color: #fff;
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#nebula .nebula-caracteristicas ul p {
+  color: #b2b2b2;
+  font-family: "roboto";
+}
+
+#nebula .ficha-tecnica {
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+#nebula .ficha-tecnica h3 {
+  color: #fff;
+  font-family: "poppins";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.725rem;
+  padding-bottom: 15px;
+}
+
+#nebula .ficha-lista {
+  background-color: #000;
+  color: #b2b2b2;
+  border-radius: 4px;
+  padding: 40px 40px 30px 40px;
+  margin-bottom: 60px;
+}
+
+#nebula .ficha-lista ul li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 0 auto;
+  border-bottom: solid 1px #111;
+  align-items: center;
+}
+
+#nebula .ficha-lista ul li:last-child {
+  border: none;
+}
+
+#nebula .ficha-lista ul li span {
+  display: block;
+  font-family: "roboto";
+  padding: 10px 0;
+}
+
+@media (max-width: 800px) {
+  #nebula .nebula-container {
+    grid-template-columns: 1fr;
+  }
+  #nebula .nebula-conteudo p {
+    margin-right: 20px;
+  }
+  #nebula .ficha-tecnica h3,
+  #nebula .nebula-informacoes h3 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  #nebula .nebula-informacoes ul {
+    grid-template-columns: 1fr;
+  }
+  #nebula .nebula-bicicletas .nebula {
+    margin-right: 20px;
+  }
+  #nebula .nebula-bicicletas .nebula-nebula {
+    grid-template-columns: 1fr;
+    margin-right: 20px;
+  }
+}
