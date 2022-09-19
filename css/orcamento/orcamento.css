@@ -1,27 +1,58 @@
-#orcamento .orcamento-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: 5fr 7fr;
-}
-
 #orcamento main {
-  background-color: #111;
+  background: #111 url("/img/dec/top-right.svg") no-repeat top 40px right 20px;
+  box-shadow: inset 0 -700px 0 0 #f7f7f7;
+  /* padding-bottom: 220px; */
 }
 
 #orcamento .orcamento-titulo {
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  line-height: 2;
+}
+
+#orcamento .orcamento-titulo .subtitulo {
+  display: block;
+  color: #ccc;
+  font-family: "roboto";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+#orcamento .orcamento-titulo h1 {
+  text-transform: lowercase;
+}
+
+#orcamento zform {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 20px;
+  padding-bottom: 180px;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.orcamento-opcao {
+  padding: 50px 60px 55px 60px;
+  color: #fff;
+  background: #000 url("/img/dec/bottom-left.svg") left 20px bottom 20px
+    no-repeat;
+  border-radius: 4px 0 0 4px;
+  box-shadow: 0 0 4px 0.1px rgba(0, 0, 0, 0.1);
 }
 
 #orcamento h2 {
-  font-size: 0.725rem;
   color: #ccc;
+  font-size: 0.725rem;
+  font-family: "poppins";
+  font-weight: 500;
   position: relative;
-  display: grid;
+  display: flex;
   align-items: center;
+  padding: 15px 0;
 }
 
 #orcamento h2::before {
@@ -29,103 +60,183 @@
   display: inline-block;
   position: absolute;
   height: 8px;
-  width: 4px;
-  background-color: #ffbb00;
+  width: 6px;
   left: -10px;
+  background-color: #ffbb00;
 }
 
-#orcamento .orcamentobg-produtos {
-  background: #000;
-  color: #ccc;
-  padding: 40px;
-  border-radius: 4px;
-  /* padding: 0 auto; */
+.orcamento-opcao #bikcraft + label,
+.orcamento-opcao #seguro + label {
+  padding-right: 88px;
 }
 
-#orcamento .orcamento-produtos label {
-  display: inline-block;
-  padding-top: 8px;
-  padding: 12px 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  background-color: #2e2e2e;
-  color: #ccc;
+.orcamento-opcao input {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.orcamento-opcao label {
   font-family: "poppins";
-  border-radius: 4px;
   position: relative;
-  border: solid 2px #000;
+  background-color: #404040;
+  padding: 10px 10px 10px 30px;
+  border-radius: 4px;
+  border: solid 1px #000;
+  display: inline-block;
+  font-weight: 500;
 }
 
-#orcamento .orcamento-produtos label::before {
+.orcamento-opcao label:hover {
+  background-color: #595959;
+}
+
+.orcamento-opcao input:checked + label {
+  background-color: #fff;
+  color: #2e2e2e;
+  box-shadow: 0 0 0 2px #ffbb00;
+}
+
+.orcamento-opcao label::before {
   content: "";
   display: inline-block;
   position: absolute;
-  height: 12px;
-  width: 12px;
-  top: 17px;
-  left: 12px;
+  height: 10px;
+  width: 10px;
+  left: 10px;
+  top: 16px;
   border-radius: 50%;
-  border: solid 1px #ccc;
-  box-sizing: border-box;
+  border: solid 1px#ccc;
 }
 
-#orcamento .orcamento-produtos input:checked + label::before {
-  border-color: #595959;
-  box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 7px #595959;
+.orcamento-opcao input:checked + label::before {
+  border: solid 1px#595959;
+  box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 5px #595959;
 }
 
-#orcamento .orcamento-produtos input:checked + label {
-  color: #000;
-  background-color: #fff;
-  font-weight: 500;
-  box-shadow: #ffbb00 1px 1px 1px 2px;
+.orcamento-bikcraft span,
+.orcamento-seguro span {
+  display: none;
 }
 
-#orcamento .orcamento-produtos input {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
+.orcamento-bikcraft label,
+.orcamento-seguro label {
+  display: flex;
+  margin: 8px 0;
+  justify-content: space-between;
 }
 
-#orcamento .orcamento-bicicletas label {
+.orcamento-bikcraft,
+.orcamento-seguro {
+  display: none;
+}
+
+.orcamento-opcao #bikcraft:checked ~ .orcamento-bikcraft,
+.orcamento-seguro #prata:checked ~ label .prata-valor,
+.orcamento-seguro #ouro:checked ~ label .ouro-valor,
+.orcamento-opcao #seguro:checked ~ .orcamento-seguro {
   display: block;
-  padding: 12px 30px;
-  margin-top: 10px;
-  background-color: #2e2e2e;
-  border-radius: 4px;
-  font-family: "poppins";
-  position: relative;
-  border: solid 2px #000;
 }
 
-#orcamento .orcamento-bicicletas label::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  height: 12px;
-  width: 12px;
-  top: 17px;
-  left: 12px;
-  border-radius: 50%;
-  border: solid 1px #ccc;
-  box-sizing: border-box;
-}
-
-#orcamento .orcamento-bicicletas input {
-  pointer-events: none;
-  opacity: 0;
-  position: absolute;
-}
-
-#orcamento .orcamento-bicicletas input:checked + label::before {
-  border-color: #595959;
-  box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 7px #595959;
-}
-
-#orcamento .orcamento-bicicletas input:checked + label {
-  color: #000;
+.bicicleta-configurcao {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 15px;
   background-color: #fff;
+  border-radius: 4px;
+  padding: 15px 20px;
+  justify-content: space-between;
+}
+
+.bicicleta-configurcao ul li {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  line-height: 2;
+  color: #595959;
+}
+
+.bicicleta-configurcao ul li h4 {
+  font-family: "poppins";
   font-weight: 500;
-  box-shadow: #ffbb00 1px 1px 1px 2px;
+  font-size: 0.725rem;
+}
+
+.bicicleta-configurcao div img {
+  border-radius: 4px;
+}
+
+.bicicleta-configurcao {
+  display: none;
+}
+
+.orcamento-bikcraft #nimbus:checked ~ #nimbus-config,
+.orcamento-bikcraft #nimbus:checked ~ label .valor-nimbus,
+.orcamento-bikcraft #magic:checked ~ #magic-config,
+.orcamento-bikcraft #magic:checked ~ label .valor-magic,
+.orcamento-bikcraft #nebula:checked ~ #nebula-config,
+.orcamento-bikcraft #nebula:checked ~ label .valor-nebula {
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  #orcamento main {
+    background: #111 url("/img/dec/top-right.svg") no-repeat top 40px right
+      370px;
+  }
+}
+
+/*---------------- Formulário ----------------*/
+#formulario {
+  padding: 50px 60px 55px 60px;
+  background: #fff url("/img/dec/bottom-right.svg") right 20px bottom 20px
+    no-repeat;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 0 4px 0.1px rgba(0, 0, 0, 0.1);
+}
+
+#formulario h2 {
+  color: #595959;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#formulario .formulario-entrega h2 {
+  margin-top: 30px;
+}
+
+#formulario label {
+  font-family: "poppins";
+  font-weight: 500;
+  display: block;
+}
+
+#formulario input {
+  background-color: #f7f7f7;
+  border: solid 1px #ededed;
+  padding: 20px 5px;
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+#formulario input:focus {
+  border: solid 1px #e48c45;
+  box-shadow: 0 0px 4px 3px #ffbb00;
+}
+
+#formulario .formulario-dados {
+  display: grid;
+  gap: 20px;
+}
+
+.dados-entrega {
+  display: grid;
+  gap: 20px;
+}
+
+#formulario button {
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
