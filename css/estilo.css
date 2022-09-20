@@ -1,45 +1,45 @@
 /* ------------Global------------ */
-@import "/css/global/global.css";
-@import "/css/global/cabecalho.css";
-@import "/css/global/rodape.css";
+@import "global/global.css";
+@import "global/cabecalho.css";
+@import "global/rodape.css";
 
 /* -----------Introdução---------- */
-@import "/css/introducao/sobre.css";
-@import "/css/introducao/bicicletas.css";
-@import "/css/introducao/tecnologia.css";
-@import "/css/introducao/parceiros.css";
-@import "/css/introducao/depoimento.css";
-@import "/css/introducao/seguros.css";
-@import "/css/introducao/seguros.css";
+@import "introducao/sobre.css";
+@import "introducao/bicicletas.css";
+@import "introducao/tecnologia.css";
+@import "introducao/parceiros.css";
+@import "introducao/depoimento.css";
+@import "introducao/seguros.css";
+@import "introducao/seguros.css";
 
 /* --------------Bicicletas-------------- */
-@import "/css/bicicletas/bicicletas.css";
+@import "bicicletas/bicicletas.css";
 
 /* ------------------Seguros--------- */
-@import "/css/seguros/seguros.css";
-@import "/css/seguros/vantagens.css";
-@import "/css/seguros/perguntas.css";
+@import "seguros/seguros.css";
+@import "seguros/vantagens.css";
+@import "seguros/perguntas.css";
 /* -------------------Contato------------------ */
-@import "/css/contato/contato.css";
-@import "/css/contato/loja.css";
+@import "contato/contato.css";
+@import "contato/loja.css";
 
 /* -----------------Nimbus------------- */
-@import "/css/nimbus/nimbus.css";
-@import "/css/nimbus/outras.css";
-@import "/css/nimbus/seguro.css";
+@import "nimbus/nimbus.css";
+@import "nimbus/outras.css";
+@import "nimbus/seguro.css";
 
 /* -----------------Magic------------- */
-@import "/css/magic/magic.css";
-@import "/css/magic/outras.css";
-@import "/css/magic/seguro.css";
+@import "magic/magic.css";
+@import "magic/outras.css";
+@import "magic/seguro.css";
 
 /* -----------------Nebula------------- */
-@import "/css/nebula/nebula.css";
-@import "/css/nebula/outras.css";
-@import "/css/nebula/seguro.css";
+@import "nebula/nebula.css";
+@import "nebula/outras.css";
+@import "nebula/seguro.css";
 
 /* -----------------Termos------------- */
-@import "/css/termos/termos.css";
+@import "termos/termos.css";
 
 /* -----------------Orçamento------------- */
-@import "/css/orcamento/orcamento.css";
+@import "orcamento/orcamento.css";
