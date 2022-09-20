@@ -138,12 +138,15 @@ textarea {
   border-radius: 4px;
   max-width: 100%;
   font-family: "arial";
+  transition: 0.3s;
+  resize: none;
 }
 
 #formulario input:focus,
 #formulario textarea:focus {
   border: solid 1px #e48c45;
-  box-shadow: 0 0px 4px 3px #ffbb00;
+  box-shadow: 0 0 4px 3px #ffbb00;
+  outline: none;
 }
 
 #formulario .formulario-dados {
